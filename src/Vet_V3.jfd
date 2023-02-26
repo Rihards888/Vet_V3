@@ -1,0 +1,65 @@
+JFDML JFormDesigner: "8.0.2.0.220" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundleName": "prop"
+	"i18n.keyPrefix": "Vet_V3"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:22:p, comp scrollPane1:::p:155:p, space u:::p, comp searshButton:::p::p}, seq l {space :28:28:p, par l {comp patientLable:::p::p, seq {comp scrollPane2:::p:214:p, space u:::p, par l:::p {comp SkatKartButton:::::x, comp JaunKartButton::t:::x, comp DzestKartButton::t:::x}}}, par l {seq {space :p:66:p, comp PackartLable:::p::p}, seq l {space :::p, comp scrollPane3:::p::p}}}, seq {space :22:22:p, comp drLabel:::p::p}}, space ::50:x}}"
+			"$verticalGroup": "par l {seq t {space :::x, comp drLabel:::p::p, space :::p, par l {comp searshButton:2::p::p, comp scrollPane1:2::p::p}, space s:::p, par b {comp patientLable::b:p::p, comp PackartLable::b:p::p}, space s:::p, par l {seq {comp SkatKartButton:::p::p, space u:::p, comp JaunKartButton:::p::p, space s:::p, comp DzestKartButton:::p::p}, comp scrollPane3:::p::p, comp scrollPane2::l:p:237:p}, space :p:73:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "drLabel"
+				"text": new FormMessage( null, "Vet_V3.drLabel.text" )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextPane" ) {
+					name: "searchField"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "searshButton"
+				"text": new FormMessage( null, "Vet_V3.searshButton.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "patientLable"
+				"text": new FormMessage( null, "Vet_V3.patientLable.text" )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "patientList"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "SkatKartButton"
+				"text": new FormMessage( null, "Vet_V3.SkatKartButton.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "JaunKartButton"
+				"text": new FormMessage( null, "Vet_V3.JaunKartButton.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "DzestKartButton"
+				"text": new FormMessage( null, "Vet_V3.DzestKartButton.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "PackartLable"
+				"text": new FormMessage( null, "Vet_V3.PackartLable.text" )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane3"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "PacienKartTable"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 865, 610 )
+		} )
+	}
+}
