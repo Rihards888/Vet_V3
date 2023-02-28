@@ -1,0 +1,233 @@
+JFDML JFormDesigner: "8.0.2.0.220" Java: "17.0.5" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.autoExternalize": true
+	"i18n.bundleName": "prop"
+	"i18n.keyPrefix": "PacForm"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :::p, par l {seq l {comp labelPacID:::p::p, space :p:30:p, comp labelPac:::p::p, space :::p, comp label1:::p::p}, seq l {par l {comp vards::l:p::p, comp label2::l:p::p, comp label5::l:p::p}, space :p:32:p, par l {comp formattedTextField1::l:p:291:p, seq l {par l:::p {comp scrollPane1::::112:x, comp scrollPane2::::112:x}, space s:::p, par l {comp label3::l:p::p, comp label4::l:p::p}, space u:::p, par l {comp scrollPane3:::p:277:p, comp scrollPane4:::p:113:p}}}}, comp label6::l:p::p, comp label12::l:p::p, par t:l::p {seq l {comp label10:::p::p, space :::p, comp checkBox1:::p::p, space s:::p, comp label11:::p::p, space u:::p, comp formattedTextField2:::::x}, seq l {comp label7:::p::p, space u:::p, comp comboBox1:::p:112:p, space s:::p, comp label8:::p::p, space s:::p, comp formattedTextField3:::p:120:p, space u:::p, comp label9:::p::p, space :::p, comp comboBox2:::p:51:p}, seq t {par l {seq l {comp label13:::p::p, space :::p, comp checkBox2:::p::p}, seq l {par t {comp label19:::p::p, comp label16:::p::p}, space u:::p, comp comboBox3:::p:60:p}}, space ::148:x, par l {seq l {comp label14:::p::p, space :::p, comp checkBox3:::p::p}, seq l {comp label17:::p::p, space :::p, comp comboBox4:::p::p}}, space :p:39:p, par l {seq {comp label15:::p::p, space s:::p, comp checkBox4:::p::p}, seq {comp label18:::p::p, space s:::p, comp comboBox5:::p::p}}}}, seq l {comp scrollPane6:::p:570:p, space :::p, comp scrollPane5:::p::p}}}, comp button1::l:p::p}"
+					"$verticalGroup": "par l {seq l {par b {comp labelPacID::b:p::p, comp labelPac::b:p::p, comp label1::b:p::p}, space :p:26:p, par l {comp vards:::p::p, comp scrollPane1:::p::p, comp label3:::p::p, comp scrollPane3:::p:24:p}, space u:::p, par l {comp label2:::p::p, comp scrollPane2:::p::p, par b {comp label4::b:p::p, comp scrollPane4::b:p::p}}, space s:::p, par b {comp formattedTextField1::b:p::p, comp label5::b:p::p}, space :p:29:p, comp label6:::p::p, space u:::p, par b {comp label7::b:p::p, comp comboBox1::b:p::p, comp label8::b:p::p, comp formattedTextField3::b:p::p, comp label9::b:p::p, comp comboBox2::b:p::p}, space u:::p, par l {comp label10:::p::p, par b {comp checkBox1::b:p::p, comp label11::b:p::p, comp formattedTextField2::b:p::p}}, space s:::p, comp label12:::p::p, space :::p, par l {comp label13:::p::p, seq l {space :p:1:p, par b {comp checkBox2::b:p::p, comp checkBox4::b:p::p, comp label15::b:p::p, comp label14::b:p::p, comp checkBox3::b:p::p}}}, space :p:20:p, par b {comp label17::b:p::p, comp comboBox4::b:p::p, comp label18::b:p::p, comp comboBox5::b:p::p, comp label16::b:p::p, comp comboBox3::b:p::p}, space s:::p, comp label19:::p::p, space u:::p, par l {seq {comp scrollPane5:::p::p, space :0:110:x}, comp scrollPane6::::122:x}, space u:::p, comp button1:::p::p}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelPacID"
+						"text": new FormMessage( null, "PacForm.labelPacID.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "vards"
+						"text": new FormMessage( null, "PacForm.vards.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": new FormMessage( null, "PacForm.label2.text" )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane1"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textAreaVards"
+							"preferredSize": new java.awt.Dimension( 1, 22 )
+						} )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane2"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textAreaUzvards"
+							"preferredSize": new java.awt.Dimension( 1, 22 )
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": new FormMessage( null, "PacForm.label3.text" )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane3"
+						add( new FormComponent( "javax.swing.JTextPane" ) {
+							name: "textPane1"
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": new FormMessage( null, "PacForm.label4.text" )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane4"
+						add( new FormComponent( "javax.swing.JTextArea" ) {
+							name: "textAreaTel"
+							"minimumSize": new java.awt.Dimension( 1, 22 )
+							"preferredSize": new java.awt.Dimension( 1, 22 )
+							"focusCycleRoot": true
+						} )
+					} )
+					add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+						name: "formattedTextField1"
+						"minimumSize": new java.awt.Dimension( 49, 28 )
+						"preferredSize": new java.awt.Dimension( 49, 28 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label5"
+						"text": new FormMessage( null, "PacForm.label5.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label6"
+						"text": new FormMessage( null, "PacForm.label6.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "labelPac"
+						"text": new FormMessage( null, "PacForm.labelPac.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"text": new FormMessage( null, "PacForm.label1.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label7"
+						"text": new FormMessage( null, "PacForm.label7.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label8"
+						"text": new FormMessage( null, "PacForm.label8.text" )
+					} )
+					add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+						name: "formattedTextField3"
+						"preferredSize": new java.awt.Dimension( 49, 22 )
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "comboBox1"
+						"preferredSize": new java.awt.Dimension( 79, 22 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label9"
+						"text": new FormMessage( null, "PacForm.label9.text" )
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "comboBox2"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label10"
+						"text": new FormMessage( null, "PacForm.label10.text" )
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "checkBox1"
+						"text": new FormMessage( null, "PacForm.checkBox1.text" )
+						"preferredSize": new java.awt.Dimension( 33, 22 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label11"
+						"text": new FormMessage( null, "PacForm.label11.text" )
+					} )
+					add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+						name: "formattedTextField2"
+						"preferredSize": new java.awt.Dimension( 49, 22 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label12"
+						"text": new FormMessage( null, "PacForm.label12.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label13"
+						"text": new FormMessage( null, "PacForm.label13.text" )
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "checkBox2"
+						"text": new FormMessage( null, "PacForm.checkBox2.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label14"
+						"text": new FormMessage( null, "PacForm.label14.text" )
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "checkBox3"
+						"text": new FormMessage( null, "PacForm.checkBox3.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label15"
+						"text": new FormMessage( null, "PacForm.label15.text" )
+					} )
+					add( new FormComponent( "javax.swing.JCheckBox" ) {
+						name: "checkBox4"
+						"text": new FormMessage( null, "PacForm.checkBox4.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label16"
+						"text": new FormMessage( null, "PacForm.label16.text" )
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "comboBox3"
+						"preferredSize": new java.awt.Dimension( 79, 22 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label17"
+						"text": new FormMessage( null, "PacForm.label17.text" )
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "comboBox4"
+						"preferredSize": new java.awt.Dimension( 60, 22 )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label18"
+						"text": new FormMessage( null, "PacForm.label18.text" )
+					} )
+					add( new FormComponent( "javax.swing.JComboBox" ) {
+						name: "comboBox5"
+						"preferredSize": new java.awt.Dimension( 60, 22 )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button1"
+						"text": new FormMessage( null, "PacForm.button1.text" )
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label19"
+						"text": new FormMessage( null, "PacForm.label19.text" )
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane5"
+					} )
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane6"
+						add( new FormComponent( "javax.swing.JList" ) {
+							name: "list1"
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0, 80, 80"
+					"$rowSpecs": "0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": new FormMessage( null, "PacForm.okButton.text" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"hAlign": 2
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancelButton"
+						"text": new FormMessage( null, "PacForm.cancelButton.text" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 2
+						"gridy": 0
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 640, 680 )
+		} )
+	}
+}
