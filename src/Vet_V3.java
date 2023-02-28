@@ -22,6 +22,11 @@ public class Vet_V3 extends JPanel {
         // TODO add your code here
         //Pievienot jaunu klientu - piezpiežot - jāatver PacForma.java logs
 
+
+
+
+
+
     }
 
     private void initComponents() {

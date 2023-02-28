@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 
-public class Main extends Vet_V3{
+public class Main extends Vet_V3 {
 
 
 
@@ -18,7 +18,8 @@ public class Main extends Vet_V3{
         // can't do this from this static method, no object reference
         // someMethod();
        Vet_V3 vet = new Vet_V3();
-//
+      vet.setSize(500, 200);
+      vet.setVisible(true);
 //
 //        JFrame f = new JFrame();//creating instance of JFrame
 //

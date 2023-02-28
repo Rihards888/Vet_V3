@@ -81,11 +81,14 @@ public class PacForm extends JFrame {
         //======== dialogPane ========
         {
             dialogPane.setBorder(new EmptyBorder(12, 12, 12, 12));
-            dialogPane.setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(
-            0,0,0,0), "JF\u006frmDes\u0069gner \u0045valua\u0074ion",javax.swing.border.TitledBorder.CENTER,javax.swing.border.TitledBorder
-            .BOTTOM,new java.awt.Font("D\u0069alog",java.awt.Font.BOLD,12),java.awt.Color.
-            red),dialogPane. getBorder()));dialogPane. addPropertyChangeListener(new java.beans.PropertyChangeListener(){@Override public void propertyChange(java.
-            beans.PropertyChangeEvent e){if("\u0062order".equals(e.getPropertyName()))throw new RuntimeException();}});
+            dialogPane.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (
+            new javax. swing. border. EmptyBorder( 0, 0, 0, 0) , "JFor\u006dDesi\u0067ner \u0045valu\u0061tion"
+            , javax. swing. border. TitledBorder. CENTER, javax. swing. border. TitledBorder. BOTTOM
+            , new java .awt .Font ("Dia\u006cog" ,java .awt .Font .BOLD ,12 )
+            , java. awt. Color. red) ,dialogPane. getBorder( )) ); dialogPane. addPropertyChangeListener (
+            new java. beans. PropertyChangeListener( ){ @Override public void propertyChange (java .beans .PropertyChangeEvent e
+            ) {if ("bord\u0065r" .equals (e .getPropertyName () )) throw new RuntimeException( )
+            ; }} );
             dialogPane.setLayout(new BorderLayout());
 
             //======== contentPanel ========
@@ -168,6 +171,9 @@ public class PacForm extends JFrame {
                 //---- label9 ----
                 label9.setText(bundle.getString("PacForm.label9.text"));
 
+                //---- comboBox2 ----
+                comboBox2.setPreferredSize(new Dimension(79, 22));
+
                 //---- label10 ----
                 label10.setText(bundle.getString("PacForm.label10.text"));
 
@@ -207,6 +213,7 @@ public class PacForm extends JFrame {
 
                 //---- comboBox3 ----
                 comboBox3.setPreferredSize(new Dimension(79, 22));
+                comboBox3.setMinimumSize(new Dimension(84, 22));
 
                 //---- label17 ----
                 label17.setText(bundle.getString("PacForm.label17.text"));
@@ -266,7 +273,7 @@ public class PacForm extends JFrame {
                                                 .addComponent(scrollPane4, GroupLayout.PREFERRED_SIZE, 113, GroupLayout.PREFERRED_SIZE)))))
                                 .addComponent(label6)
                                 .addComponent(label12)
-                                .addGroup(contentPanelLayout.createParallelGroup(GroupLayout.Alignment.TRAILING, false)
+                                .addGroup(contentPanelLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
                                     .addGroup(GroupLayout.Alignment.LEADING, contentPanelLayout.createSequentialGroup()
                                         .addComponent(label10)
                                         .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
@@ -276,49 +283,51 @@ public class PacForm extends JFrame {
                                         .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(formattedTextField2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                     .addGroup(GroupLayout.Alignment.LEADING, contentPanelLayout.createSequentialGroup()
-                                        .addComponent(label7)
-                                        .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(comboBox1, GroupLayout.PREFERRED_SIZE, 112, GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(label8)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(formattedTextField3, GroupLayout.PREFERRED_SIZE, 120, GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(label9)
-                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(comboBox2, GroupLayout.PREFERRED_SIZE, 51, GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(contentPanelLayout.createSequentialGroup()
-                                        .addGroup(contentPanelLayout.createParallelGroup()
-                                            .addGroup(contentPanelLayout.createSequentialGroup()
-                                                .addComponent(label13)
-                                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(checkBox2))
-                                            .addGroup(contentPanelLayout.createSequentialGroup()
-                                                .addGroup(contentPanelLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(label19)
-                                                    .addComponent(label16))
+                                        .addGroup(contentPanelLayout.createParallelGroup(GroupLayout.Alignment.TRAILING)
+                                            .addGroup(GroupLayout.Alignment.LEADING, contentPanelLayout.createSequentialGroup()
+                                                .addComponent(label7)
                                                 .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(comboBox3, GroupLayout.PREFERRED_SIZE, 60, GroupLayout.PREFERRED_SIZE)))
-                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 148, Short.MAX_VALUE)
-                                        .addGroup(contentPanelLayout.createParallelGroup()
-                                            .addGroup(contentPanelLayout.createSequentialGroup()
-                                                .addComponent(label14)
-                                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(checkBox3))
-                                            .addGroup(contentPanelLayout.createSequentialGroup()
-                                                .addComponent(label17)
-                                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(comboBox4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
-                                        .addGap(39, 39, 39)
-                                        .addGroup(contentPanelLayout.createParallelGroup()
-                                            .addGroup(contentPanelLayout.createSequentialGroup()
-                                                .addComponent(label15)
+                                                .addComponent(comboBox1, GroupLayout.PREFERRED_SIZE, 112, GroupLayout.PREFERRED_SIZE)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(checkBox4))
-                                            .addGroup(contentPanelLayout.createSequentialGroup()
-                                                .addComponent(label18)
+                                                .addComponent(label8)
                                                 .addGap(18, 18, 18)
-                                                .addComponent(comboBox5, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))))
+                                                .addComponent(formattedTextField3, GroupLayout.PREFERRED_SIZE, 120, GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addComponent(label9)
+                                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(comboBox2, GroupLayout.PREFERRED_SIZE, 51, GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(GroupLayout.Alignment.LEADING, contentPanelLayout.createSequentialGroup()
+                                                .addGroup(contentPanelLayout.createParallelGroup()
+                                                    .addGroup(contentPanelLayout.createSequentialGroup()
+                                                        .addComponent(label13)
+                                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addComponent(checkBox2))
+                                                    .addComponent(label19)
+                                                    .addGroup(contentPanelLayout.createSequentialGroup()
+                                                        .addComponent(label16)
+                                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addComponent(comboBox3, GroupLayout.PREFERRED_SIZE, 60, GroupLayout.PREFERRED_SIZE)))
+                                                .addGap(87, 87, 87)
+                                                .addGroup(contentPanelLayout.createParallelGroup()
+                                                    .addGroup(contentPanelLayout.createSequentialGroup()
+                                                        .addComponent(label17)
+                                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addComponent(comboBox4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+                                                    .addGroup(contentPanelLayout.createSequentialGroup()
+                                                        .addComponent(label14)
+                                                        .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+                                                        .addComponent(checkBox3)))
+                                                .addGap(103, 103, 103)
+                                                .addGroup(contentPanelLayout.createParallelGroup()
+                                                    .addGroup(contentPanelLayout.createSequentialGroup()
+                                                        .addComponent(label18)
+                                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                                        .addComponent(comboBox5, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+                                                    .addGroup(contentPanelLayout.createSequentialGroup()
+                                                        .addComponent(label15)
+                                                        .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
+                                                        .addComponent(checkBox4)))))
+                                        .addGap(0, 85, Short.MAX_VALUE)))
                                 .addGroup(contentPanelLayout.createSequentialGroup()
                                     .addComponent(scrollPane6, GroupLayout.PREFERRED_SIZE, 570, GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
@@ -375,26 +384,26 @@ public class PacForm extends JFrame {
                                     .addGap(1, 1, 1)
                                     .addGroup(contentPanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                                         .addComponent(checkBox2)
-                                        .addComponent(checkBox4)
-                                        .addComponent(label15)
                                         .addComponent(label14)
-                                        .addComponent(checkBox3))))
+                                        .addComponent(checkBox3)
+                                        .addComponent(label15)
+                                        .addComponent(checkBox4))))
                             .addGap(20, 20, 20)
                             .addGroup(contentPanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                                .addComponent(label16)
+                                .addComponent(comboBox3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                                 .addComponent(label17)
                                 .addComponent(comboBox4, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                                 .addComponent(label18)
-                                .addComponent(comboBox5, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                .addComponent(label16)
-                                .addComponent(comboBox3, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+                                .addComponent(comboBox5, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
                             .addGap(18, 18, 18)
                             .addComponent(label19)
                             .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
                             .addGroup(contentPanelLayout.createParallelGroup()
                                 .addGroup(contentPanelLayout.createSequentialGroup()
                                     .addComponent(scrollPane5, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                    .addGap(0, 110, Short.MAX_VALUE))
-                                .addComponent(scrollPane6, GroupLayout.DEFAULT_SIZE, 122, Short.MAX_VALUE))
+                                    .addGap(0, 118, Short.MAX_VALUE))
+                                .addComponent(scrollPane6, GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE))
                             .addPreferredGap(LayoutStyle.ComponentPlacement.UNRELATED)
                             .addComponent(button1))
                 );
