@@ -22,6 +22,6 @@ Patreiz meklēju info kā pievienot šai pogai " new ActionListener() " lai pala
 
 Bildi pievienoju.
 
-28.02.2023
+
 
 RP
