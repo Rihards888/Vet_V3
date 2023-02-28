@@ -12,7 +12,7 @@ Bildes arī pievienoju.
 
 RP
 
-28.02.2023
+25.02.2023
 
 Iveidoju Jauna pacienta kartiņu, šeit tiek reģistrēti jaunie pacienti un viņu dzīvnieki.
 
