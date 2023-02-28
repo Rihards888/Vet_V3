@@ -20,7 +20,7 @@ Jauna pacienta kartiņai ir jāatveras kad tiek nospiesta poga: Jauns pacients
 
 Patreiz meklēju info kā pievienot šai pogai " new ActionListener() " lai palaistu jauna pacienta kartiņu. Pogas ID: JaunKart
 
-Bildi pievienoju.
+Bildi pievienoju => Jauna_Pacienta_Kartiņa.PNG
 
 28.02.2023
 
