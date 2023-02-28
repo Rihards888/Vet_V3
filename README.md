@@ -22,6 +22,15 @@ Patreiz meklēju info kā pievienot šai pogai " new ActionListener() " lai pala
 
 Bildi pievienoju => Jauna_Pacienta_Kartiņa.PNG
 
+!!! Papildināts:
+
+Izveiduju kopējo dizainu, kas sastāv no 3 blokiem.
+
+Bildi ar kopējo struktūru un loģisko izskārtojumu vievienoju => kopējā_struktūra.PNG
+
+Papildus .java failus ar pievienoju šim Repo.
+
+
 28.02.2023
 
 RP
